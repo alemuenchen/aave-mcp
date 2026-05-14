@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+wallets.json
+.DS_Store
+*.log
+.idea/
+.vscode/
