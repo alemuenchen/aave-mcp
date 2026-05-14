@@ -1,0 +1,54 @@
+{
+  "name": "aave-mcp",
+  "version": "0.4.0",
+  "description": "MCP server that monitors AAVE v3 positions on every chain where the protocol is live, via direct RPC reads. Chain list is derived dynamically from @bgd-labs/aave-address-book and updates automatically when AAVE governance approves new deployments. Read-only on AAVE; writes only to a local wallets.json for wallet labels.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "aave-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "aave",
+    "aave-v3",
+    "defi",
+    "ethereum",
+    "arbitrum",
+    "base",
+    "optimism",
+    "polygon",
+    "claude",
+    "anthropic",
+    "portfolio",
+    "lending"
+  ],
+  "license": "MIT",
+  "author": "Alessandro Melazzini",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemuenchen/aave-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alemuenchen/aave-mcp/issues"
+  },
+  "homepage": "https://github.com/alemuenchen/aave-mcp#readme",
+  "dependencies": {
+    "@bgd-labs/aave-address-book": "^4.44.22",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "viem": "^2.47.12",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
