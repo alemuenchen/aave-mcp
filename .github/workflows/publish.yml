@@ -23,6 +23,7 @@ jobs:
 
       - run: npm run build
 
+      # Auth via npm Trusted Publishing (OIDC). The id-token: write
+      # permission above lets npm exchange the GitHub OIDC token for a
+      # short-lived publish credential. No long-lived NPM_TOKEN needed.
       - run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
