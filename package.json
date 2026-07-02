@@ -52,7 +52,7 @@
   "dependencies": {
     "@bgd-labs/aave-address-book": "^4.44.22",
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "viem": "^2.47.12",
+    "viem": "^2.54.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
