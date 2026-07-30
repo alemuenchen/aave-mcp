@@ -51,7 +51,7 @@
   "homepage": "https://github.com/alemuenchen/aave-mcp#readme",
   "dependencies": {
     "@bgd-labs/aave-address-book": "^4.44.22",
-    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "viem": "^2.47.12",
     "zod": "^3.23.8"
   },
